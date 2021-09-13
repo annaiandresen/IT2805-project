@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Nettbutikk - PlanteTante</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
+
+    <!--Favicons-->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous"/>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header id="nav-header">
+      <nav id="navbar"></nav>
+    </header>
+
+    <!-- Main content -->
+    <div class="content">
+      <section class="ab-hero-header header">
+        <img
+          src="img/ab-header.jpg"
+          alt="header plant"
+          class="ab-hero-header-img"
+        />
+        <div class="container page-header">
+          <h1>Nettbutikk</h1>
+        </div>
+      </section>
+      <section class="ab-nettbutikk-main">
+        <!-- Hovedmat av nettbutikk -->
+        <div class="ab-nettbutikk-container container">
+          <div>
+            <div class="ab-sidebar">
+              <h3>Kategorier</h3>
+              <div class="ab-skillelinje"></div>
+              <div class="ab-checkbox">
+                <form id="ab-kategorier">
+                  <label for="all">
+                    <input
+                      type="radio"
+                      id="all"
+                      name="kategori"
+                      oninput="filterList(this)"
+                      checked
+                    />
+                    <span>Alle Produkter</span>
+                  </label>
+                  <label for="grønne-planter">
+                    <input
+                      type="radio"
+                      id="grønne-planter"
+                      name="kategori"
+                      oninput="filterList(this)"
+                    />
+                    <span>Grønne Planter</span>
+                  </label>
+                  <label for="potter">
+                    <input
+                      type="radio"
+                      id="potter"
+                      name="kategori"
+                      oninput="filterList(this)"
+                    />
+                    <span>Potter</span>
+                  </label>
+                  <label for="jord">
+                    <input
+                      type="radio"
+                      id="jord"
+                      name="kategori"
+                      oninput="filterList(this)"
+                    />
+                    <span>Jord</span>
+                  </label>
+                </form>
+              </div>
+              <div class="ab-skillelinje"></div>
+              <div class="ab-price-slider">
+                <h3>Pris</h3>
+                <fieldset class="ab-pris-filter">
+                  <div class="ab-slider-wrap">
+                    <label for="ab-min-pris">
+                      <input
+                        type="range"
+                        name="min-pris"
+                        id="ab-min-pris"
+                        min="1"
+                        max="999"
+                        value="1"
+                        onchange="filterPriceMin(this)"
+                      />
+                    </label>
+                    <label for="ab-max-pris">
+                      <input
+                        type="range"
+                        name="max-pris"
+                        id="ab-max-pris"
+                        min="1"
+                        max="999"
+                        value="999"
+                        onchange="filterPriceMax(this)"
+                      />
+                    </label>
+                  </div>
+                  <div class="ab-price-wrapper">
+                    <div class="ab-price-wrap-1">
+                      <label for="one">NOK</label>
+                      <input id="one" value="1" disabled />
+                    </div>
+                    <div class="ab-price-wrap-line">-</div>
+                    <div class="ab-price-wrap-2">
+                      <label for="two">NOK</label>
+                      <input id="two" value="999" disabled />
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+              <div class="ab-skillelinje"></div>
+              <div class="ab-dropdown">
+                <button class="ab-dropdown-button" id="ab-dropdown-button">
+                  Sorter
+                  <i class="ab-arrow"></i>
+                </button>
+                <div
+                  class="ab-dropdown-valg"
+                  onclick="sortList(this)"
+                  data-sortBy="P0"
+                >
+                  Pris lav-høy
+                </div>
+                <div
+                  class="ab-dropdown-valg"
+                  onclick="sortList(this)"
+                  data-sortBy="P1"
+                >
+                  Pris høy-lav
+                </div>
+                <div
+                  class="ab-dropdown-valg"
+                  onclick="sortList(this)"
+                  data-sortBy="N0"
+                >
+                  Alfabetisk A-Å
+                </div>
+                <div
+                  class="ab-dropdown-valg"
+                  onclick="sortList(this)"
+                  data-sortBy="N1"
+                >
+                  Alfabetisk Å-A
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul id="ab-produkter">
+            <!-- <li class="ab-produkt">
+                    <div class= ab-produkt-bilde>
+
+                    </div>
+                    <h3>Produkt</h3>
+                    <p>50cm</p>
+                    <div class = "ab-pris-kjøp">
+                        <p class = ab-produkt-pris>300,-</p>
+                        <button class = "button ab-produkt-button">Kjøp</button>
+                    </div>     
+                  </li> -->
+          </ul>
+        </div>
+        <div id="prod-info-wrapper"></div>
+        <div id="handle-videre-wrapper"></div>
+      </section>
+    </div>
+    <!-- Footer -->
+    <footer id="footer"></footer>
+    <script src="scripts/store.js"></script>
+    <script src="scripts/lazy.js"></script>
+    <script src="scripts/footer.js"></script>
+    <script src="scripts/nettbutikk.js"></script>
+    <script src="scripts/navbar.js"></script>
+  </body>
+</html>

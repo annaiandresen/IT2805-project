@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset='utf-8'/>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+  <title>Ordreoversikt - PlanteTante</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+
+  <!-- Stylesheet -->
+  <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'/>
+  <script src="https://kit.fontawesome.com/4b9becc5be.js" crossorigin="anonymous"></script>
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header id="nav-header">
+    <nav id="navbar"></nav>
+  </header>
+
+  <!-- Main content -->
+  <div class="content">
+
+    <!-- Header -->
+    <section class="db-hero-header header">
+      <img
+        src="img/db-header.jpg"
+        alt="header monstera"
+        class="db-hero-header-img"
+      />
+      <div class="container page-header">
+        <h1>Ordreoversikt</h1>
+      </div>
+    </section>
+
+    <!-- Contact info input -->
+    <form onsubmit="submitForm()" name="form">
+    <section class="container db-kontaktinfo">
+        <a class="db-tilbake-knapp p-small" onclick='store.redirect("handlekurv.html")'><i class="fas fa-angle-left"></i>Tilbake til handlekurven</a>
+      <div class="db-grid-container">
+        <div class="db-left-column">
+          <h3>Kontaktinformasjon</h3>
+          <label for="db-email">E-post:</label>
+          <input type="email" id="db-email" name="email" placeholder="skriv din e-post adresse her" required autofocus>
+          <h3>Navn og adresse</h3>
+          <label for="db-fname">Fornavn:</label>
+          <input type="text" id="db-fname" name="fname" placeholder="skriv ditt fornavn her" required>
+          <label for="db-lname">Etternavn:</label>
+          <input type="text" id="db-lname" name="lname" placeholder="skriv ditt etternavn her" required>
+          <label for="db-address">Adresse:</label>
+          <input type="text" id="db-address" name="address" placeholder="skriv din adresse her" required>
+          <label for="db-zipcode">Postnummer:</label>
+          <input type="text" id="db-zipcode" name="zipcode" placeholder="skriv ditt postnummer her" required maxlength="4">
+          <label for="db-city">Poststed:</label>
+          <input type="text" id="db-city" name="city" placeholder="skriv ditt poststed her" required>
+          <label for="db-country">Land:</label>
+          <select class="db-land" id="db-country" name="country" required>
+            <option value="">- velg land her -</option>
+            <option value="Norge">Norge</option>
+          </select>
+          <label for="db-telephone">Telefon:</label>
+          <input type="text" id="db-telephone" name="telephone" placeholder="skriv ditt telefonnummer her" required maxlength="8">
+        
+        </div>
+      
+      <!-- Order summary -->
+      <div class="db-bestillingsoversikt db-right-column p-med">
+        <h3 id="db-h2-bestillingsoversikt">Bestillingsoversikt</h3>
+        <div id="db-produkt-wrapper"></div>
+        <hr>
+        <div class="db-priser-wrapper">
+          <div class="db-priser-flex-child">
+            <div>Sum</div>
+            <input class="db-products-sum p-med" name="productsSum" disabled></div> 
+          <div class="db-priser-flex-child">
+            <div>Frakt</div>
+            <input class="db-shipping-total p-med" name="shipping" disabled></div>
+          <hr>
+          <div class="db-priser-flex-child">
+            <div>Totalsum</div>
+            <input class="db-totalsum p-med" name="total" disabled></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Delivery methods -->
+    <section class="db-leveringsmetode">
+      <div class="container db-grid-container p-med">
+        <div>
+        <h3>Leveringsmetode</h3>
+        <h4>Velg leveringsmetode</h4>
+            <div id="db-postkasse">
+              <input type="radio" name="delivery" value="49" checked>Bring - Pakke i postkassen (49,-)
+            </div>
+            <div id="db-postkontor">
+              <input type="radio" name="delivery" value="0"> Bring - Hent på nærmeste postkontor (0,-)
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Payment methods -->
+    <section class="db-betalingsmetode">
+      <div class="container db-grid-container p-med">
+        <div id="db-payment-methods-wrapper">
+          <h3>Betalingsmetode</h3>
+          <h4>Velg betalingsmetode</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Button submit form -->
+    <div class="container db-grid-container">
+      <button class="button accent" id="db-fullfor-bestilling" type="submit">Fullfør bestilling</button>
+    </div>
+
+    </form>
+  </div>
+  
+  <!-- Footer -->
+  <footer id="footer"></footer>
+  
+  <!-- JavaScript  -->
+  <script src="scripts/store.js"></script>
+  <script src="scripts/ordreoversikt.js"></script>
+  <script src="scripts/footer.js"></script>
+  <script src="scripts/navbar.js"></script>
+</body>
+</html>

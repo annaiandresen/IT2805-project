@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset='utf-8'/>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'/>
+  <title>Hjem - PlanteTante</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'/>
+
+  <!-- Stylesheet -->
+  <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'/>
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header id="nav-header">
+    <nav id="navbar"></nav>
+  </header>
+  <!-- Main content -->
+  <div class="content">
+    <!-- Header -->
+    <section class="mh-hero-header">
+      <div class="container mh-hero-container">
+        <div class="mh-hero-text">
+          <h1 class="mh-hero-title">PlanteTante</h1>
+          <div class="mh-hero-title subtitle">- gjør det grønnere</div>
+          <a onclick="store.redirect('nettbutikk.html')" class="button mh-hero-button">Utvid plantesamlingen</a>
+        </div>
+        <img src="img/mh-header-img.jpg" alt="Plante" class="mh-hero-header-img">
+      </div>
+    </section>
+    <!-- Det siste fra nettbutikken -->
+    <section class="sec-pad-med ">
+      <div class="container mh-center-vertical mh-child-marg-med">
+        <h2>Det siste fra nettbutikken</h2>
+        <ul class="mh-fp-products-grid" id="fp-products">
+        </ul>
+        <a onclick='store.redirect("nettbutikk.html")' class="button">Se alle produkter</a>
+      </div>
+    </section>
+    <!-- Hvorfor oss -->
+    <section class="sec-pad-med mh-light-sec">
+      <div class="container mh-center-vertical mh-child-marg-med">
+        <h2>Hvorfor oss?</h2>
+        <p class="p-med">
+          I en stadig mer masseprodusert verden blir det vanskeligere og vanskeligere å 
+          finne kvalitetsprodukter. Vi i PlanteTante streber etter å dyrke frem og videreformidle 
+          planter med skyhøy standard og de tilleggsproduktene som er nødvendig for å kunne gi 
+          plantene den omsorgen de trenger. 
+        </p>
+        <a onclick='store.redirect("om_oss.html")' class="button inverted">Les mer om oss</a>
+      </div>
+    </section>
+    <!-- Hva sier andre planteelskere? -->
+    <section class="sec-pad-med">
+      <div class="container mh-center-vertical">
+        <h2>Hva sier andre planteelskere?</h2>
+        <div class="slider-wrapper-container">
+          <div class="btn-container">
+            <a class="prevBtn">
+              <img src="img/arrow-left.svg" alt="navigate left">
+            </a>
+          </div>
+          <div class="slider-container" id="slider"></div>
+          <div class="btn-container">
+            <a class="nextBtn">
+                <img src="img/arrow-right.svg" alt="navigate right">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <!-- Footer -->
+  <footer id="footer"></footer>
+
+  <!-- Load scripts -->
+  <script src="scripts/store.js"></script>
+  <script src="scripts/footer.js"></script>
+  <script src="scripts/hjem.js"></script>
+  <script src="scripts/navbar.js"></script>
+</body>
+</html>

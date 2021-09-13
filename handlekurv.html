@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset='utf-8' />
+  <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+  <title>Handlekurv - PlanteTante</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+
+  <!--Favicons-->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header id="nav-header">
+    <nav id="navbar"></nav>
+  </header>
+
+  <!-- Main content -->
+  <div class="content">
+    <section class="aa-hero-header header">
+      <img src="img/aa-header-img.jpg" alt="Plante" class="aa-hero-header-img" />
+      <div class="container page-header">
+        <h1>Din handlekurv</h1>
+      </div>
+    </section>
+    <!-- Produktvisning -->
+    <section class="aa-handlekurv">
+      <h2 id="aa-items">tittel</h2>
+      <div class="aa-handlekurv-produkt container">
+        <ul class="aa-hk-produkt-grid" id="aa-productlist">
+          <!-- Liste over produkter -->
+        </ul>
+      </div>
+    </section>
+    <div class="aa-handlekurv-container">
+      <div class="aa-handlekurv-checkout container">
+        <a class="button aa-left-btn" onclick='store.redirect("nettbutikk.html")'>Tilbake til nettbutikken</a>
+        <div id="aa-totalcontainer">
+          <div id="aa-totalsum">Totalsum</div>
+          <div id="aa-total"></div>
+          <div id="aa-frakt">
+            <p class="p-smallest">+ frakt</p>
+          </div>
+        </div>
+        <div class="aa-right-btn button-deactivate-wrapper" id="checkoutBtn-wrapper">
+          <a class="button" id="checkoutBtn" onclick='store.redirect("ordreoversikt.html")'>Gå til
+            kassen</a>
+          <div class="button-blocking"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Scripts here-->
+  <script src="scripts/store.js"></script>
+  <script src="scripts/handlekurv.js"></script>
+
+  <!-- Footer -->
+  <footer id="footer"></footer>
+  <script src="scripts/footer.js"></script>
+
+  <!-- Navbar -->
+  <script src="scripts/navbar.js"></script>
+</body>
+
+</html>

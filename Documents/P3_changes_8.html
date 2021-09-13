@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Project P3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="img/fav/favicon-32x32.png" />
+  <!-- Main CSS stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <!-- Import Montserrat from Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/3f07ce7a5e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="main-grid">
+    <div class="nav-wrapper">
+      <div class="nav-fixed">
+        <div class="nav-inner-wrapper">
+          <div class="nav">
+            <h2>Gruppe 8</h2>
+            <ul class="nav-list">
+              <li>
+                <a class="nav-link" href="#sec1">Administrative detaljer</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#sec2">Endringer</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#sec3">Minimumskriterier</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#sec4">Oppdatert Mappestruktur</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#sec5">Endelig arbeidsfordeling</a>
+              </li>
+              <li>
+                <a class="nav-link" href="#sec6">Modularitet</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="container">
+        <header class="header">
+          <h1 class="h1-title">P3 Endringer</h1>
+          <p class="subtitle">Andreas, Anna, Diana, Magnus og Vilde</p>
+          <time class="date" datetime="2020-11-05">05. November 2020</time>
+        </header>
+        <section class="section" id="sec1">
+          <h2>Administrative detaljer</h2>
+          <p>Klient: Georgine Blom</p>
+          <p>
+            Kontaktperson: <a title="Send mail" href="mailto:dgbjorkh@stud.ntnu.no">Diana Bjørkhaug</a>
+          </p>
+          <p>
+            Vår klient er Georgine Blom, eier og daglig leder i PlanteTante.
+            Hun deler sin interesse for planteliv med Diana og de kom først
+            kontakt over Instagram. De ble fort enige om mangelen på utsalg av
+            planter og utstyr for alle som er over middels interessert i
+            plantevelferd. Disse samtalene resulterte i Georgines ønske og
+            drøm om å starte nettopp en slik butikk selv. Vi skal da lage en
+            nettside for å realisere Georgines drøm.
+          </p>
+          <a href="https://org.ntnu.no/it2805gruppe8"><i class="fas fa-link"></i> Link til nettside</a>
+        </section>
+        <hr />
+        <section class="section" id="sec2">
+          <h2>Endringer</h2>
+          <ul>
+            <li>Endringer vi har gjort
+              <p>
+                Vi hadde i utgangspunktet planlagt å ha fem JavaScript-filer, men vi
+                har nå åtte for å få til alle de funksjonene vi ønsket på siden. Det
+                ble gjort flere endringer etter det som var planlagt i P2, disse er
+                listet opp for hver fil under.
+              </p>
+            </li>
+            <li>Endringer på hjem.html:
+              <p>
+                Rekkefølgen på elementene på siden er endret slik at produktene fra
+                nettbutikken ligger over seksjonen ‘Hvorfor oss?’.
+              </p>
+            </li>
+            <li>Endringer på om_oss.html:
+              <p>
+                Om oss-siden er nokså lik som i mock-upen, det er lagt til to bilder,
+                skrevet noe mer tekst og implementert et responsivt kart fra Google
+                Maps. Når man hovrer over “Om oss” i nav-baren kommer det opp en
+                drop-down-meny som linker til de ulike underoverskriftene på siden.
+              </p>
+            </li>
+            <li>Endringer på nettbutikk.html:
+              <p>
+                Den mest vesentlige endringen på nettbutikk.html (nettbutikk oversikt
+                i P2) er at det kommer opp en popup med informasjon om produktet når
+                du klikker på det istedet for å ta deg til en produktside. I mockupen
+                ble sorterings-dropdownen lagt over produktene til høyre på siden, men
+                det ble mer aktuelt å legge denne i sidebaren med kategoriene og
+                pris-slideren.
+              </p>
+              <p>
+                Ellers er nettbutikken for det meste lik som beskrevet i P2, og som
+                man ser på mockupen.
+              </p>
+            </li>
+            <li>Endringer på handlekurv.html:
+              <p>Det er kun gjort noen små endringer på handlekurven:</p>
+              <p>
+                I headeren er bildet snudd og zoomet litt ut på. Overskriften er
+                endret fra svart til grønn.
+              </p>
+              <p>
+                Overskriften i handlekurven er endret fra “x varer” til “x vare(r) i
+                handlekurven”.
+              </p>
+              <p>
+                Rekkefølgen på pris på produkt og knappene for å legge til/trekke fra
+                produktet er endret: Først kommer navn på varen, så pris, og så
+                knappene.
+              </p>
+              <p>
+                Det er nå endret på hvor mange produkter som skal vises i bredden i en
+                grid. I mock-upen var det tre; vi bestemte oss for å ha fire produkt i
+                bredden på en “vanlig” PC-skjerm. Dersom skjermstørrelsen blir
+                nedjustert vil griden tilpasse seg til å vise x antall produkt i
+                bredden som passer til skjermstørrelsen.
+              </p>
+              <p>
+                Boksen som viser totalsum på bunnen av siden er ganske lik som i
+                mock-upen. Det er lagt til litt ekstra skygge rundt boksen for å gjøre
+                den mer framtredende. Skriftstørrelse, font, og hvor fet skriften er
+                ble også tilpasset det gjennomgående temaet til nettsiden. “+ frakt”
+                ble også endret fra å vise en satt pris til å kun vise at
+                fraktkostnader forekommer. Denne informasjonen ble også gjort mindre
+                og satt i kursiv.
+              </p>
+            </li>
+            <li>Endringer på ordreoversikt.html:
+              <p>
+                Ordreoversikt-siden er ganske lik som i mock-upen. Bildet i headeren
+                er erstattet med et som tillater at tittelen på siden kommer bedre
+                frem, og som i tillegg passer bedre sammen med header-bildene på de
+                andre sidene. I stedet for å ha fornavn og etternavn på samme linje,
+                er de nå plassert under hverandre. Dette for å gjøre det enklere å
+                kode, uten at det har noe betydning designmessig. Prisene som tilhører
+                de ulike leveringsmetodene er skrevet i parentes i stedet for å være
+                plassert på høyre side, av samme grunn som ovenfor. Logoene tilhørende
+                de ulike betalingsmetodene er ikke blitt inkludert for å redusere
+                antall bilder hentet eksternt. Fargen på “Fullfør bestilling”-knappen
+                er endret til accent fargen vår for å matche resten av knappene på
+                siden.
+              </p>
+            </li>
+            <li>Endringer på footer.js
+              <p>
+                Knappen for å sende inn e-postadressen ligger under input-feltet i
+                stedet for ved siden av. Det er også lagt til informasjon om hvor vi
+                har hentet bilder og beskrivelser. Når en e-postadresse legges inn og
+                knappen under trykkes på, vil det komme opp et varsel om at
+                informasjonen er mottatt og brukeren har meldt seg på nyhetsbrevet.
+                Det er nå mer padding under innholdet.
+              </p>
+            </li>
+            <li>Endringer på handlekurv.js
+              <p>Denne filen har en del annen funksjoner enn vi egentlig tenkte:</p>
+              <p>
+                For det første er det er lagt til en funksjon updateData() for å legges
+                til i andre funksjoner for å oppdatere antall varer i handlekurven.
+              </p>
+              <p>
+                I tillegg endrer overskriften på handlekurven seg dynamisk etter hvor
+                mange produkter som finnes i handlekurven.
+              </p>
+              <p>
+                I stedet for at handlekurv.js har en egen funksjon for prisutregning,
+                importeres denne fra store.js. I stedet skriver denne filen kun
+                totalsummen til handlekurv.html.
+              </p>
+              <p>
+                Produktene på siden blir dynamisk lagt til gjennom funksjonen
+                addProduct().
+              </p>
+              <p>
+                Selve funksjonen med å legge til og fjerne produkt er gitt i store.js,
+                men i handlekurv.js er denne funksjonen bundet til knappene. Den vil
+                også oppdatere dataen(antall produkter i handlekurven) ved å kalle på
+                updateData().
+              </p>
+            </li>
+            <li>Endringer på navbar.js
+              <p>
+                For å gjøre nav-baren mer responsiv er det lagt til en burgermeny som
+                dukker opp når skjermen blir mindre. Ikonet for handlekurv forblir i
+                nav-baren. Logoen i venstre hjørne linker til hovedsiden i tillegg til
+                ‘Hjem’-knappen.
+              </p>
+            </li>
+            <li>Endringer på ordreoversikt.js
+              <p>Følger den originale</p>
+            </li>
+            <li>Endringer på style.css:
+              <p>
+                Navbarenfølger nå med når man scroller nedover siden.
+              </p>
+            </li>
+            <li>Ny fil - products.json:
+              <p>
+                Vi valgte å legge til l alle produktene på nettbutikken i en .json-fil
+                da dette er mer ryddig enn å ha alle i store.js, som kun består av
+                funksjoner.
+              </p>
+
+            </li>
+            <li>Ny fil - nettbutikk.js:
+              <p>
+                Produkt.js borte, denne filen har ansvaret med å lage produktene ut i
+                fra informasjon fra products.json.
+              </p>
+              <p>
+                Tar inn input fra sidebaren for å filtrere produkter. Får altså en
+                oppdatert liste på produkter som skal lastes inn fra store.js basert
+                på kategorier, pris, og i hvilken rekkefølge de skal lastes.
+              </p>
+              <p>
+                Ingen nettbutikk-produkt side. Scripten lager dynamisk en popup med
+                med informasjon om produktet når du trykker på produktframen i
+                nettbutikken.
+              </p>
+            </li>
+            <li>Ny fil - hjem.js:
+              <p>
+                Denne filen har to funksjoner. Det første den gjør er å laste inn
+                produktene på i seksjonen “Det nyeste fra nettbutikken”. Den andre
+                funksjonen laster inn en slideshow-komponent som ligger i den nederste
+                seksjonen.
+              </p>
+            </li>
+            <li>Ny fil - lazy.js:
+              <p>
+                Enkelt script som laster inn bilder basert på om de er på vei til å
+                vises på skjermen. Dette med mål om å oppnå en raskere nettside.
+              </p>
+            </li>
+            <li>Ny fil - store.js
+              <p>
+                Store.js ble erstatningen på det vi i den originale planen kalte
+                produkt.js. Funksjonen til produkt.js skulle være å være en base for
+                nettbutikken. Vi fant det derfor hensiktsmessig å endre navn fra
+                produkt.js til store.js.
+              </p>
+              <p>I denne fila lages det to nye klasser:</p>
+              <ol>
+                <li>
+                  Product. En produktklasse som ikke gjør annet enn å ta inn parametere
+                  i en konstruktør.
+                </li>
+                <li>
+                  Store. Inneholder alle de grunnleggende funksjonene og metodene som
+                  trengs for å bruke nettbutikken, blant annet funksjoner for å
+                  redirecte med en query streng, slik at man beholder tilstanden til
+                  handlekurven gjennom nettsiden.
+                </li>
+                <li>
+                  Store klassen importerer json-filen med XMLHttpRequest. Dette gir en deprecation warning. Dette kunne vært unngått ved å bruke async funksjoner, men dette valgte vi å ikke bruke.
+                </li>
+              </ol>
+            </li>
+          </ul>
+        </section>
+        <hr />
+        <section class="section" id="sec3">
+          <h2>Minimumskriterier</h2>
+          <h3>Generelt</h3>
+          <p>Vi jobbet mye sammen i dette prosjektet, og har derfor samarbeidet mye sammen om de forskjellige sidene.
+          </p>
+          <h3>Dette var Vildes minimumskriterier i P2</h3>
+          <p>Vilde skal ha ansvar for navbar.js og footer.js. Begge disse dokumentene er skrevet med JavaScript på grunn
+            av at de skal være lik på alle sidene. Navbaren skal være en dropdown-meny. Footeren skal inneholde en
+            påmelding til nyhetsbrev. Når en trykker på “Bli med!”, kommer det et popup-vindu opp med en tekst som
+            bekrefter påmeldingen.</p>
+          <h3>Dette gjorde Vilde</h3>
+          <p> Vilde gjennomførte sine minimumskriterier ved å lage en navbar.js og footer.js som inneholdt funksjonene
+            gitt i minimumskriterier. Navbaren inneholder en dropdownmeny, og den endrer seg dynamisk når bredden på
+            nettsiden blir mindre. Footeren inneholder en påmelding til nyhetsbrev </p>
+          <h3>Dette var Andreas' minimumskriterier i P2</h3>
+          <p>Andreas skal ha ansvar for produkt.js. Her er det mange produkter med lik styling, og da brukes javascript
+            for å laste disse repeterende produktblokkene, i stedet for å skrive samme kode mange ganger. Dette gjelder
+            altså for nettbutikken. Filen skal også sørge for å filtrere varer riktig i forhold til hvilke filter man
+            velger på nettbutikken. </p>
+          <h3>Dette gjorde Andreas</h3>
+          <p>Selve produkt.js ble endret til forskjellige filer, blant annet nettbutikk.js. Denne filen laster inn
+            produktene dynamisk i nettbutikken. I tillegg sørget Andreas for en boks med filtreringsvalg til
+            nettbutikken, hvor brukeren kan filtrere etter pris og type. </p>
+          <h3>Dette var Diana og Magnus sine minimumskriterier i P2</h3>
+          <p>Vi har ansvar for ordreoversikt.js. Her bruker vi JavaScript for å oppdatere prisen i bestillingsoversikten
+            basert på valgt leveringsmetode. Vi bruker også JavaScript der en velger betalingsmetode, da det kun skal
+            være et vindu åpent om gangen som viser en forklarende tekst i forhold til valgt betalingsmetode. På denne
+            siden vil det også være et popup-vindu med en tekst som bekrefter at kjøpet er gjennomført.</p>
+          <h3>Dette gjorde Diana og Magnus</h3>
+          <p>Diana og Magnus oppfylte alle sine minimumskriterier. Prisen i bestillingsoversikten blir oppdatert basert
+            på leveringsmetode. I tillegg vil det være et dynamisk vindu som åpner seg hver gang man trykker på en gitt
+            betalingsmetode, hvor det informasjon relatert til den valgte betalingsmetoden. Ved å trykke på “fullfør
+            bestilling” vil det komme opp et popup-vindu med tekst som bekrefter at kjøpet er gjennomført. </p>
+          <h3>Dette var Anna og Magnus sine minimumskriterier i P2</h3>
+          <p>De hadde ansvar for handlekurv.js. Dette scriptet skal inneholde funksjoner for å legge til og fjerne
+            produkter av samme type i handlekurven. I tillegg skal den inneholde en funksjon som kalkulerer en totalpris
+            av alle varene</p>
+          <h3>Dette gjorde Anna og Magnus</h3>
+          <p>Anna og Magnus fullførte sine minimumskriterier ved hjelp av handlekurv.js og store.js. Selve funksjonene
+            er gitt i store.js ettersom de blir brukt i flere sider (blant annet nettbutikken), men blir kalt på i
+            handlekurv.js. Her kan man legge til og fjerne produkt av samme type ved et knappetrykk. I tillegg er det en
+            funksjon i JS-filen som kalkulerer totalpris av alle varene i handlekurven. </p>
+        </section>
+        <hr />
+        <section class="section" id="sec4">
+          <h2>Oppdatert Mappestruktur</h2>
+          <ul>
+            <li>index.html (det ville vært naturlig å ha hjem.html som index.html, men for å gjøre det enkelt å bytte mellom å sende brukeren til P1-P4 og hjem-siden valgte vi heller å bruke window.location = "hjem.html" ved innlasting.)</li>
+            <li>hjem.html</li>
+            <li>om_oss.html</li>
+            <li>nettbutikk.html</li>
+            <li>handlekurv.html</li>
+            <li>ordreoversikt.html</li>
+            <li>css:
+              <ul>
+                <li>style.css</li>
+              </ul>
+            </li>
+            <li>img:
+              <ul>
+                <li>fav:
+                  <ul>
+                    <li>favicon-16x16.png</li>
+                    <li>favicon-32x32.png</li>
+                  </ul>
+                </li>
+                <li>produkt:
+                  <ul>
+                    <li>produkt1.jpeg</li>
+                    <li>…</li>
+                    <li>produkt36.jpeg</li>
+                  </ul>
+                </li>
+              </ul>
+              <ul>
+                <li>aa-header-img.jpg</li>
+                <li>ab-header.jpg</li>
+                <li>arrow-left.svg</li>
+                <li>arrow-right.svg</li>
+                <li>db-header.jpg</li>
+                <li>logo_PT.svg</li>
+                <li>mh-header-img.jpg</li>
+                <li>quotes.png</li>
+                <li>v-butikkvegg.jpg</li>
+                <li>v-GeorgineBlom.png</li>
+                <li>v-header.jpg</li>
+              </ul>
+            </li>
+            <li>scripts:
+              <ul>
+                <li>footer.js</li>
+                <li>handlekurv.js</li>
+                <li>hjem.js</li>
+                <li>lazy.js</li>
+                <li>navbar.js</li>
+                <li>nettbutikk.js</li>
+                <li>ordreoversikt.js</li>
+                <li>products.json</li>
+                <li>store.js</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <hr />
+        <section class="section" id="sec5">
+          <h2>Endelig arbeidsfordeling</h2>
+          <table>
+            <tbody>
+              <tr>
+                <th>Filnavn</th>
+                <th>Beskrivelse</th>
+                <th>Ansvarlig</th>
+              </tr>
+              <tr>
+                <td>hjem.html</td>
+                <td>Nettbutikkens forside</td>
+                <td>Magnus</td>
+              </tr>
+              <tr>
+                <td>om_oss.html</td>
+                <td>Kontaktinformasjon</td>
+                <td>Vilde</td>
+              </tr>
+              <tr>
+                <td>nettbutikk.html</td>
+                <td>Oversikt over varer i nettbutikken</td>
+                <td>Andreas</td>
+              </tr>
+              <tr>
+                <td>handlekurv.html</td>
+                <td>Oversikt over varer brukeren har lagt i handlekurven.</td>
+                <td>Anna</td>
+              </tr>
+              <tr>
+                <td>ordreoversikt.html</td>
+                <td>Side for å skrive inn kontaktinformasjon, metode for levering, og legge inn betalingsinformasjon,
+                  samt en oversikt over bestillingen.</td>
+                <td>Diana</td>
+              </tr>
+              <tr>
+                <td>footer.js</td>
+                <td>Nettsidens footer</td>
+                <td>Vilde</td>
+              </tr>
+              <tr>
+                <td>handlekurv.js</td>
+                <td>Fjerne/legge til flere av samme produkt, oppdatere antall produkt i handlekurven-tittel, regne ut
+                  pris, vise produkt dynamisk i handlekurven.</td>
+                <td>Anna</td>
+              </tr>
+              <tr>
+                <td>hjem.js</td>
+                <td>Slideshow-komponent og laster inn produkt fra nettbutikken til forsiden. </td>
+                <td>Magnus</td>
+              </tr>
+              <tr>
+                <td>lazy.js</td>
+                <td></td>
+                <td>Magnus</td>
+              </tr>
+              <tr>
+                <td>navbar.js</td>
+                <td>Fixed meny med dropdown</td>
+                <td>Vilde</td>
+              </tr>
+              <tr>
+                <td>nettbutikk.js</td>
+                <td></td>
+                <td>Andreas</td>
+              </tr>
+              <tr>
+                <td>ordreoversikt.js</td>
+                <td>En javascript fil som inneholder nesten alle funksjoner som blir brukt på Ordreoversikt siden.</td>
+                <td>Diana</td>
+              </tr>
+              <tr>
+                <td>products.json</td>
+                <td>Produktene vi har på nettbutikken</td>
+                <td>Andreas</td>
+              </tr>
+              <tr>
+                <td>store.js</td>
+                <td>Base for </td>
+                <td>Magnus</td>
+              </tr>
+              <tr>
+                <td>style.css</td>
+                <td>CSS-filen som inneholder stilsettet av hjemmesiden. </td>
+                <td>Alle</td>
+              </tr>
+              <tr>
+                <td>Designelementer</td>
+                <td>Logo, knapper og diverse andre designelementer</td>
+                <td>Magnus + alle</td>
+              </tr>
+              <tr>
+                <td>Finpuss</td>
+                <td>Rydding i kode. Sørge for gjenbruk av kode i HTML, CSS og Javascript, samt validering av kode.</td>
+                <td>Alle</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <hr />
+        <section class="section" id="sec6">
+          <h2>Modularitet</h2>
+          <p>
+            Modulariteten på nettsiden ble nådd ved å lage .js-filer for navbar, footer og store. Vilde var ansvarlig
+            for implementeringen av navbar.js og footer.js og Magnus var ansvarlig for implementeringen av store.js.
+            Store.js henter produktene fra products.json
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>

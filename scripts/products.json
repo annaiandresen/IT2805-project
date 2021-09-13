@@ -1,0 +1,205 @@
+{
+	"products" : [
+		{
+			"id" : 1,
+			"name" : "Ø-kompost 30L",
+			"desc" : "Denne sekken inneholder levende økologisk kompostjord. Ingen unødvendige tilsetninger, kun levende jord som har blitt kompostert over flere år. <br><br> Denne jorden kan brukes både i bed og i krukker. Bland gjerne inn krukkesand for å få bedre drenering. Ha gjerne også sand i bunnen av potten når du potter om. Husk at røttene drikker fra bunnen i sanden, og spiser fra toppen i komposten.",
+			"img" : {
+				"max" : "img/produkt/o-kompost.jpeg",
+				"med" : "img/produkt/o-kompostmed.jpg",
+				"small" : "img/produkt/o-kompostsmall.jpg"
+			},
+			"price" : 198,
+			"stock" : 10,
+			"dateAdded" : "2020-09-10",
+			"categories" : [
+				"alle-produkter",
+				"jord"
+			]
+		},
+		{
+			"id" : 2,
+			"name" : "Krukkesand 2,5L bøtte",
+			"desc" : "Diameter x høyde: 12 x 14,5cm <br><br>       Krukkesand til bruk under/i kompostjorden i potter og såbrett, samt krukker ute. <br><br> Sanden holder på vann og er samtidig lettgjennomtrengelig for unge røtter når de er tørste. Slik får de utvikle en naturlig rotarkitektur og opprettholdt evnen til å hente vann under jorden, slik som det gjøres ute i naturen.",
+			"img" : {
+				"max" : "img/produkt/krukkesand_2_5L.jpeg",
+				"med" : "img/produkt/krukkesand_2_5Lmed.jpg",
+				"small" : "img/produkt/krukkesand_2_5Lsmall.jpg"
+			},
+			"price" : 89,
+			"stock" : 20,
+			"dateAdded" : "2020-01-10",
+			"categories" : [
+				"alle-produkter",
+				"jord"
+			]
+		},
+		{
+			"id" : 3,
+			"name" : "Air Pot 1L",
+			"desc" : "Disse pottene er spesielt egnet ved dyrking av tomater, agurker, stauder m.m. Pottene er laget av resirkulert plastikk, og er ment å kunne demonteres/monteres mange hundre ganger. Fordelen med hullene er at jorden får tilgang på mer oksygen.",
+			"img" : {	
+				"max" : "img/produkt/air-pot-1l.jpeg",
+				"med" : "img/produkt/air-pot-1lmed.jpg",
+				"small" : "img/produkt/air-pot-1lsmall.jpg"
+			},
+			"price" : 39,
+			"stock" : 10,
+			"dateAdded" : "2020-1-12",
+			"categories" : [
+				"alle-produkter",
+				"potter"
+			]
+		},
+		{
+			"id" : 4,
+			"name" : "Air Pot 3L",
+			"desc" : "Diameter x høyde: 19 x 23cm <br><br> Denne størrelsen er spesielt egnet for blomster og planter av liten størrelse. Den er også veldig fin til videredyrking av grønnsaker. ",
+			"img" : {	
+				"max" : "img/produkt/air-pot-3l.jpeg",
+				"med" : "img/produkt/air-pot-3lmed.jpg",
+				"small" : "img/produkt/air-pot-3lsmall.jpg"
+			},
+			"price" : 69,
+			"stock" : 10,
+			"dateAdded" : "2020-24-10",
+			"categories" : [
+				"alle-produkter",
+				"potter"
+			]
+		},
+		{
+			"id" : 5,
+			"name" : "Air Pot 5L",
+			"desc" : "Diameter x høyde: 23 x 25cm <br><br> Denne størrelsen er spesielt egnet for blomster og planter av medium størrelse, eventuelt salat.",
+			"img" : {	
+				"max" : "img/produkt/air-pot-5l.jpeg",
+				"med" : "img/produkt/air-pot-5lmed.jpg",
+				"small" : "img/produkt/air-pot-5lsmall.jpg"
+			},
+			"price" : 89,
+			"stock" : 10,
+			"dateAdded" : "2020-12-10",
+			"categories" : [
+				"alle-produkter",
+				"potter"
+			]
+		},
+		{
+			"id" : 6,
+			"name" : "Terracotta Antikk Høy",
+			"desc" : "20cm <br><br> Håndlagde uregelmessige og patinerte. Rustikt utseende.",
+			"img" : {	
+				"max" : "img/produkt/terracotta-antikk-hoy.jpeg",
+				"med" : "img/produkt/terracotta-antikk-hoymed.jpg",
+				"small" : "img/produkt/terracotta-antikk-hoysmall.jpg"
+			},
+			"price" : 319,
+			"stock" : 10,
+			"dateAdded" : "2019-09-10",
+			"categories" : [
+				"alle-produkter",
+				"potter"
+			]
+		},
+		{
+			"id" : 7,
+			"name" : "Terracotta Antikk Lav",
+			"desc" : "25cm <br><br> Håndlagde uregelmessige og patinerte. Rustikt utseende.",
+			"img" : {	
+				"max" : "img/produkt/terracotta-antikk-lav.jpeg",
+				"med" : "img/produkt/terracotta-antikk-lavmed.jpg",
+				"small" : "img/produkt/terracotta-antikk-lavsmall.jpg"
+			},
+			"price" : 392,
+			"stock" : 10,
+			"dateAdded" : "2019-09-12",
+			"categories" : [
+				"alle-produkter",
+				"potter"
+			]
+		},
+		{
+			"id" : 8,
+			"name" : "Aloe Vera",
+			"desc" : "Lettstelt sukkulent med tykke grønne blader. En av verdens eldste medisinplanter. Trives på solfylte steder. La den tørke ut mellom hver vanning. <br><br> Aloe vera har et interessant, kaktuslignende utseende, og nettopp av denne grunn brukes den ofte som prydplante hjemme. I dag er det imidlertid like vanlig å høre om planten som en ingrediens i sammenheng med medisin, velvære og helse.",
+			"img" : {	
+				"max" : "img/produkt/aloe-vera.jpeg",
+				"med" : "img/produkt/aloe-veramed.jpg",
+				"small" : "img/produkt/aloe-verasmall.jpg"
+			},
+			"price" : 159,
+			"stock" : 10,
+			"dateAdded" : "2019-22-12",
+			"categories" : [
+				"alle-produkter",
+				"grønne-planter"
+			]
+		},
+		{
+			"id" : 9,
+			"name" : "Monstera",
+			"desc" : "Trendy, karakterfull plante med hullete blader. Trives på lyse steder, men kan også stå et stykke inn i rommet. Vannes når jorden nesten har tørket ut. Kalles også vindusblad.",
+			"img" : {
+				"max" : "img/produkt/monstera.jpeg",
+				"med" : "img/produkt/monsteramed.jpg",
+				"small" : "img/produkt/monsterasmall.jpg"},
+			"price" : 139,
+			"stock" : 10,
+			"dateAdded" : "2020-09-10",
+			"categories" : [
+				"alle-produkter",
+				"grønne-planter"
+			]
+		},
+		{
+			"id" : 10,
+			"name" : "Gullranke",
+			"desc" : "Gullranke er dekorative med sine farger på bladene i grønt og noe hvitt. Planten klatrer lett og er lettstelt. <br><br> Denne planten har en luftrensende egenskap og egner seg godt på soverom, bad eller på kjøkken.",
+			"img" : {
+				"max" : "img/produkt/gullranke.jpeg",
+				"med" : "img/produkt/gullrankemed.jpg",
+				"small" : "img/produkt/gullrankesmall.jpg"},
+			"price" : 849,
+			"stock" : 10,
+			"dateAdded" : "2020-7-10",
+			"categories" : [
+				"alle-produkter",
+				"grønne-planter"
+			]
+		},
+		{
+			"id" : 11,
+			"name" : "Strelitzia Nicolai",
+			"desc" : "Flott plante med dekorative store blader som vokser i en vifteform. Trive best på lyse steder, gjerne litt sol, men unngå sørlig sol om sommeren. Dekorativ plante.",
+			"img" : {
+				"max" : "img/produkt/strelitzia-nicolai.jpeg",
+				"med" : "img/produkt/strelitzia-nicolaimed.jpg",
+				"small" : "img/produkt/strelitzia-nicolaismall.jpg"},
+			"price" : 629,
+			"stock" : 10,
+			"dateAdded" : "2020-5-11",
+			"categories" : [
+				"alle-produkter",
+				"grønne-planter"
+			]
+		},
+		{
+			"id" : 12,
+			"name" : "Calathea Orbifolia",
+			"desc" : "Frodig plante med store, vakre blad, stripete i grågrønt og grønt. Trives på lyst til halvskygge, unngå direkte sol. Hold jorden lett fuktig, men ikke våt.<br><br> Trives i jord med lav pH og høy luftfuktighet. Dusj gjerne bladene regelmessig og vann med kalkfritt vann. Røttene vokser relativt kjapt og fyller ut krukken. Plant om i større krukker eller del planten når den blir for stor. Bruk kalkfri jord ved omplanting og kalkfri næring i vannet en gang i uken i løpet av sommerhalvåret.",
+			"img" : {
+				"max" : "img/produkt/calathea-orbifolia.jpeg",
+				"med" : "img/produkt/calathea-orbifoliamed.jpg",
+				"small" : "img/produkt/calathea-orbifoliasmall.jpg"
+			},
+			"price" : 325,
+			"stock" : 10,
+			"dateAdded" : "2019-06-25",
+			"categories" : [
+				"alle-produkter",
+				"grønne-planter"
+			]
+		}
+	]
+}
